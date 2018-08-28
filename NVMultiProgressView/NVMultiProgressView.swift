@@ -14,6 +14,7 @@ public class NVMultiProgressView: UIView {
     public var minimumValue: Double = 0
     public var maximumValue: Double = 1
     
+    @IBInspectable
     public var cornerRadius: CGFloat = 0 {
         didSet {
             layer.cornerRadius = cornerRadius
