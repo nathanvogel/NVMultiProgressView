@@ -7,10 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D84909142135D5490037885D /* NVMultiProgressView.podspec in Resources */ = {isa = PBXBuildFile; fileRef = D84909132135D5490037885D /* NVMultiProgressView.podspec */; };
+		D8549AFF2135BC010084A111 /* NVMultiProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8549AFE2135BC010084A111 /* NVMultiProgressView.swift */; };
+		D8549B012135BCB80084A111 /* NVMultiProgressViewRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8549B002135BCB80084A111 /* NVMultiProgressViewRenderer.swift */; };
 		D89DAD2721349A6B00218DE7 /* NVMultiProgressView.h in Headers */ = {isa = PBXBuildFile; fileRef = D89DAD2521349A6B00218DE7 /* NVMultiProgressView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D84909122135D2A70037885D /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		D84909132135D5490037885D /* NVMultiProgressView.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NVMultiProgressView.podspec; sourceTree = "<group>"; };
+		D8549AFE2135BC010084A111 /* NVMultiProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NVMultiProgressView.swift; sourceTree = "<group>"; };
+		D8549B002135BCB80084A111 /* NVMultiProgressViewRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NVMultiProgressViewRenderer.swift; sourceTree = "<group>"; };
 		D89DAD2221349A6B00218DE7 /* NVMultiProgressView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NVMultiProgressView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D89DAD2521349A6B00218DE7 /* NVMultiProgressView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NVMultiProgressView.h; sourceTree = "<group>"; };
 		D89DAD2621349A6B00218DE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -30,6 +37,7 @@
 		D89DAD1821349A6B00218DE7 = {
 			isa = PBXGroup;
 			children = (
+				D84909132135D5490037885D /* NVMultiProgressView.podspec */,
 				D89DAD2421349A6B00218DE7 /* NVMultiProgressView */,
 				D89DAD2321349A6B00218DE7 /* Products */,
 			);
@@ -46,8 +54,11 @@
 		D89DAD2421349A6B00218DE7 /* NVMultiProgressView */ = {
 			isa = PBXGroup;
 			children = (
+				D8549AFE2135BC010084A111 /* NVMultiProgressView.swift */,
+				D8549B002135BCB80084A111 /* NVMultiProgressViewRenderer.swift */,
 				D89DAD2521349A6B00218DE7 /* NVMultiProgressView.h */,
 				D89DAD2621349A6B00218DE7 /* Info.plist */,
+				D84909122135D2A70037885D /* README.md */,
 			);
 			path = NVMultiProgressView;
 			sourceTree = "<group>";
@@ -95,6 +106,7 @@
 				TargetAttributes = {
 					D89DAD2121349A6B00218DE7 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
 					};
 				};
 			};
@@ -120,6 +132,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D84909142135D5490037885D /* NVMultiProgressView.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,6 +143,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8549B012135BCB80084A111 /* NVMultiProgressViewRenderer.swift in Sources */,
+				D8549AFF2135BC010084A111 /* NVMultiProgressView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,7 +203,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -245,7 +260,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -259,6 +274,7 @@
 		D89DAD2B21349A6B00218DE7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -276,6 +292,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = study.blended.NVMultiProgressView;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -284,6 +301,7 @@
 		D89DAD2C21349A6B00218DE7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
