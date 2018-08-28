@@ -79,7 +79,7 @@ NVMultiProgressView is a simple iOS view-only progress bar that supports any num
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/nathanvogel/NVMultiProgressView", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/nathanvogel/NVMultiProgressView.git", :tag => "#{s.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
