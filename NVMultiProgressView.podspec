@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
-It is a simple view-only progress bar that supports any number of progresses.
+NVMultiProgressView is a simple iOS view-only progress bar that supports any number of progresses.
                    DESC
 
   s.homepage     = "https://github.com/nathanvogel/NVMultiProgressView"
@@ -79,7 +79,7 @@ It is a simple view-only progress bar that supports any number of progresses.
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "http://EXAMPLE/NVMultiProgressView.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/nathanvogel/NVMultiProgressView", :tag => "#{s.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -90,8 +90,8 @@ It is a simple view-only progress bar that supports any number of progresses.
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "Classes", "Classes/**/*.{h,m}"
-  s.exclude_files = "Classes/Exclude"
+s.source_files = "NVMultiProgressView"
+
 
   # s.public_header_files = "Classes/**/*.h"
 
@@ -133,5 +133,7 @@ It is a simple view-only progress bar that supports any number of progresses.
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # s.dependency "JSONKit", "~> 1.4"
+
+s.swift_version = "4.2"
 
 end
